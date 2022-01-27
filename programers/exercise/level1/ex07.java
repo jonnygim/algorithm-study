@@ -11,8 +11,7 @@ class Solution {
     public String solution(String s) {
         String answer = "";
         int i = s.length() / 2;
-
-        // System.out.println(s.charAt(i));
+        
         if(s.length() % 2 == 0) {
             answer = answer + s.charAt(i-1) + s.charAt(i);
         } else {
