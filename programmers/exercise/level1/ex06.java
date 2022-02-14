@@ -19,7 +19,7 @@ arr = [4, 4, 4, 3, 3] 이면 [4, 3] 을 return 합니다.
 
 import java.util.*;
 
-public class Solution {
+public class ex06 {
     public int[] solution(int []arr) {
 
         ArrayList<Integer> al = new ArrayList<Integer>();

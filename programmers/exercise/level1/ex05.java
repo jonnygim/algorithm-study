@@ -13,7 +13,7 @@ s에 'p'의 개수와 'y'의 개수를 비교해 같으면 True, 다르면 False
 문자열 s는 알파벳으로만 이루어져 있습니다.
  */
 
-class Solution {
+class ex05 {
     boolean solution(String s) {
         boolean answer = true;
         int cnt = 0;

@@ -7,7 +7,7 @@
 > 제한사항
 s는 길이가 1 이상, 100이하인 스트링입니다.
  */
-class Solution {
+class ex07 {
     public String solution(String s) {
         String answer = "";
         int i = s.length() / 2;

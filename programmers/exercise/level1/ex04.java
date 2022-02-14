@@ -8,7 +8,7 @@
 n은 0 이상 3000이하인 정수입니다.
  */
 
-class Solution {
+class ex04 {
     public int solution(int n) {
         int answer = 0;
 

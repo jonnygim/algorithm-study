@@ -9,7 +9,7 @@
 n은 길이 10,000이하인 자연수입니다.
  */
 
-class Solution {
+class ex02 {
     public String solution(int n) {
         String answer = "";
 
