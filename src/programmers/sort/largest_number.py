@@ -2,24 +2,24 @@
 #수 있는 큰 수
 def solution(numbers):
     answer = ''
-    n = 0
+    sum_ = 0
+    tmp = []
+    for number in numbers:
+        c = (str(number) * 4)[:4]
+        length = len(str(number))
+        tmp.append((c, length))
+    tmp.sort(reverse=True)
 
-    print(sorted(numbers, key=str, reverse=True))
-    a = sorted(numbers, key=str, reverse=True)
+    for (c, length) in tmp:
+        sum_ += int(c)
 
-    for i in range(0, len(a)):
-        if len(str(a[-2])) == 2 and len(str(a[-1])) == 1:
-            print(str(a[-2])[1])
-            n = a[-2]
-            a[-2] = a[-1]
-            a[-1] = n
+        if sum_ == 0:
+            return '0'
+        answer += c[:length]
 
-        answer += str(a[i])
+    return answer
 
-    print(answer)
-    return str(answer)
-
-
-solution([3, 30, 34, 32, 5, 9])
-solution([34, 3444, 32, 3222])
+# solution2([3, 30, 34, 32, 5, 9])
+solution2([3, 30, 34, 5, 9])
+# solution2([34, 3444, 32, 3222])
 # 하면 344434323222
